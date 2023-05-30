@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <!-- font  -->
+        <link rel="preconnect" hre f="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <title>Rock Paper Scissors Game</title>
+    </head>
+
+    <body>
+        <div class="title">
+            <h1>rock paper scissors game</h1>
+        </div>
+        <div class="wrapper">
+            <div class="button">
+                <button class="rpsButton rps" value="rock">
+                    ✊
+                    <div class="layer"><h3>Rock</h3></div>
+                </button>
+
+                <!-- <div class="layer"><h3>Paper</h3></div> -->
+                <button class="rpsButton rps" value="paper">
+                    🤚
+                    <div class="layer"><h3>Paper</h3></div>
+                </button>
+
+                <!-- <div class="layer"><h3>Scissors</h3></div> -->
+                <button class="rpsButton rps" value="scissors">
+                    ✌
+                    <div class="layer"><h3>Scissors</h3></div>
+                </button>
+            </div>
+            <div>
+                <button class="rpsButton reset" id="endgame">
+                    🔴
+                    <div class="layer"><h3>Reset</h3></div>
+                </button>
+            </div>
+            <!-- box to show result  -->
+            <div class="result-container">
+                <div class="hand">
+                    <div id="hand-pla"></div>
+                    <div id="hand-com"></div>
+                </div>
+                <hr />
+                <div id="result"></div>
+                <div class="Scores" id="score">
+                    <!-- <p>Player Score :</p>
+                    <p>Computer Score :</p> -->
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
